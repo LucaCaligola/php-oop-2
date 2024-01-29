@@ -25,9 +25,6 @@ class Producs {
         return $this->name;
     }
 
-    public function setName (String $name){
-        return $this->name = $name;
-    }
 
     public function getDescription(){
         return $this->description;
@@ -37,8 +34,14 @@ class Producs {
         return $this->image;
     }
 
-    public function getPrice($logged){
-        return $this->price;
+    public function getCategory($logged){
+        return $this->category;
+    }
+
+
+
+    public function getProductInfo () : string {
+        return $this->name . ' ' . $this->description . ' ' . $this->image . ' ' . $this->category->name . ' ' . ;
     }
 
 }

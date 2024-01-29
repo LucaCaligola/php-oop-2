@@ -25,4 +25,9 @@ class Food extends Product {
     public function getWeight(){
         return $this->weight;
     }
+
+
+
+    public function getFoodInfo () : string {
+        return $this->type . ' ' . $this->wight;
 }
