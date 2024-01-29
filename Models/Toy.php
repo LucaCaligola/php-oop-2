@@ -2,13 +2,13 @@
 
 
 
-require_once __DIR__ . './Product.php';
+require_once __DIR__ . '/Product.php';
 
 class Toy extends Product{
 
     public $material;
 
-    function __construct(string $_name, string $_description, string $_imageUrl, float $_price, Category $_category, string $_material {
+    public function __construct(string $_name, string $_description, string $_imageUrl, float $_price, Category $_category, string $_material) {
         parent::__construct($_name, $_description, $_imageUrl, $_price, $_category);
         $this->material = $_material;
       
@@ -25,3 +25,4 @@ class Toy extends Product{
         return $this->material;
 
     }
+}

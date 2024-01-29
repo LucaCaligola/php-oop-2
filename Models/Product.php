@@ -1,7 +1,7 @@
 <?php
 
 
-class Producs {
+class Product {
 
     public $name;
     public $description;
@@ -41,7 +41,10 @@ class Producs {
 
 
     public function getProductInfo () : string {
-        return $this->name . ' ' . $this->description . ' ' . $this->image . ' ' . $this->category->name . ' ' . ;
+        return $this->name . ' ' . $this->description . ' ' . $this->image . ' ' . $this->category->name . ' ';
+    }
+    public function getAdditionalInfo(){
+        return false;
+        }
     }
 
-}
