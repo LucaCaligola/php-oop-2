@@ -10,7 +10,7 @@ class Category {
         $this->name = $name;
     }
    
-    public function getName(): String {
+    public function getName() {
         return $this->name;
     }
 
